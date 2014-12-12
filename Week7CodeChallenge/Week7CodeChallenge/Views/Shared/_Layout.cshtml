@@ -9,58 +9,56 @@
 <head>
     <meta name="viewport" content="width=device-width" />
     <title>Code Challenge</title>
-    
+
     <!---JQuery -->
     <script src="~/Scripts/jquery-1.11.1.js"></script>
     <!---bootstrap-->
     <script src="~/Scripts/bootstrap.min.js"></script>
-    <link rel="stylesheet" href="~/Content/bootstrap.min.css"/>
-    <link rel="stylesheet" href="~/Content/bootstrap-theme.min.css"/>
+    <link rel="stylesheet" href="~/Content/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/bootstrap-theme.min.css" />
 
     <!-- my javascript-->
     <script src="~/Scripts/main.js"></script>
-    <link rel="stylesheet" href="~/Content/main.css"/>
+    <link rel="stylesheet" href="~/Content/main.css" />
 
 </head>
-    <body>
-        <div class="container">
-            <nav class="navbar">
-                <div class="row">
-                    <img class="navbar-left" src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />
-                    <div class="navbar-right" style="line-height: 170px;">
-                        <ul class="list-inline">
-                            <li data-url="@Url.Action("Index", "Home")" class="ajax-link">Home</li>
-                            <li data-url="@Url.Action("About", "Home")" class="ajax-link">About</li>
-                            <li data-url="@Url.Action("Work", "Home")" class="ajax-link">Work</li>
-                            <li data-url="@Url.Action("Careers", "Home")" class="ajax-link">Careers</li>
-                            <li data-url="@Url.Action("Index", "Contact")" class="ajax-link">Contact</li>
-                        </ul>
-                    </div>
-                </div>
-            </nav>
-        </div>
-        <div class="container">
-            @RenderBody()
-        </div>
-        <footer class="footer">
-            <div class="container">
-                <div class="row clearfix">
-                    <div class="col-md-6 column">
-                        Copyright 2014 Fake Studio
-                    </div>
-                    <div class="col-md-6 columm" >
-                        <div class="ajax-link">Home</div>
-                        <div>  |  </div>
-                        <div class="ajax-link">About</div>
-                        <div>  |  </div>
-                        <div class="ajax-link">Work</div>
-                        <div>  |  </div>
-                        <div class="ajax-link">Careers</div>
-                        <div>  |  </div>
-                        <div class="ajax-link">Contact</div>
-                    </div>
+<body>
+    <div class="container">
+        <nav class="navbar">
+            <div class="row">
+                <img class="navbar-left" src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />
+                <div class="navbar-right" style="line-height: 170px;">
+                    <ul class="list-inline">
+                        <li data-url="@Url.Action("Index", "Home")" class="ajax-link">Home</li>
+                        <li data-url="@Url.Action("About", "Home")" class="ajax-link">About</li>
+                        <li data-url="@Url.Action("Work", "Home")" class="ajax-link">Work</li>
+                        <li data-url="@Url.Action("Careers", "Home")" class="ajax-link">Careers</li>
+                        <li data-url="@Url.Action("Index", "Contact")" class="ajax-link">Contact</li>
+                    </ul>
                 </div>
             </div>
-        </footer>
-    </body>
+        </nav>
+    </div>
+    
+    @RenderBody()
+    
+    <footer class="footer">
+        <div class="container">
+            <div class="row clearfix">
+                <div class="col-md-6 column">
+                    Copyright 2014 Fake Studio
+                </div>
+                <div class="navbar-right">
+                    <ul class="list-inline">
+                        <li data-url="@Url.Action("Index", "Home")" class="ajax-link">Home</li>
+                        <li data-url="@Url.Action("About", "Home")" class="ajax-link">About</li>
+                        <li data-url="@Url.Action("Work", "Home")" class="ajax-link">Work</li>
+                        <li data-url="@Url.Action("Careers", "Home")" class="ajax-link">Careers</li>
+                        <li data-url="@Url.Action("Index", "Contact")" class="ajax-link">Contact</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
 </html>

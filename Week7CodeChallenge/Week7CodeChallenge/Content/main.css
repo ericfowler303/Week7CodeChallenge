@@ -20,6 +20,7 @@ body {
     display: inline-block;
 }
 
-.ajax-link {
-    
+.row .col-md-3 {
+    border: 1px solid black;
+    margin: 45px;
 }

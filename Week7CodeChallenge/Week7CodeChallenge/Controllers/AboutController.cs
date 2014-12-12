@@ -8,6 +8,12 @@ namespace Week7CodeChallenge.Controllers
 {
     public class AboutController : Controller
     {
+        // GET: About/Index
+        [HttpGet]
+        public ActionResult Index()
+        {
+            return View();
+        }
         // GET: About/Who
         public ActionResult Who()
         {

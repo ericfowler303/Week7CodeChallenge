@@ -16,11 +16,19 @@ body {
   height: 60px;
   background-color: #f5f5f5;
 }
-.column * {
+/*.column * {
     display: inline-block;
-}
+}*/
 
 .row .col-md-3 {
     border: 1px solid black;
     margin: 45px;
+}
+.container .col-md-6 img {
+    width: 50%;
+    height: 50%;
+}
+.container .col-md-6 .well {
+    display: inherit;
+    align-items: center;
 }

@@ -19,9 +19,21 @@
 
     <!-- my javascript-->
     <script src="~/Scripts/main.js"></script>
+    <link rel="stylesheet" href="~/Content/main.css"/>
+
 </head>
 <body>
+    <header class="page-header container">
+        <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif"/>
+        
+    </header>
     <div class="container">
+        @RenderBody()
     </div>
+    <footer class="footer">
+        <div class="container">
+
+        </div>
+    </footer>
 </body>
 </html>

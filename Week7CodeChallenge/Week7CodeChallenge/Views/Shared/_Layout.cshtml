@@ -22,18 +22,45 @@
     <link rel="stylesheet" href="~/Content/main.css"/>
 
 </head>
-<body>
-    <header class="page-header container">
-        <img src="http://cdn-img.easylogo.cn/gif/51/51700.gif"/>
-        
-    </header>
-    <div class="container">
-        @RenderBody()
-    </div>
-    <footer class="footer">
+    <body>
         <div class="container">
-
+            <nav class="navbar">
+                <div class="row">
+                    <img class="navbar-left" src="http://cdn-img.easylogo.cn/gif/51/51700.gif" />
+                    <div class="navbar-right" style="line-height: 170px;">
+                        <ul class="list-inline">
+                            <li data-url="@Url.Action("Index", "Home")" class="ajax-link">Home</li>
+                            <li data-url="@Url.Action("About", "Home")" class="ajax-link">About</li>
+                            <li data-url="@Url.Action("Work", "Home")" class="ajax-link">Work</li>
+                            <li data-url="@Url.Action("Careers", "Home")" class="ajax-link">Careers</li>
+                            <li data-url="@Url.Action("Index", "Contact")" class="ajax-link">Contact</li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         </div>
-    </footer>
-</body>
+        <div class="container">
+            @RenderBody()
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row clearfix">
+                    <div class="col-md-6 column">
+                        Copyright 2014 Fake Studio
+                    </div>
+                    <div class="col-md-6 columm" >
+                        <div class="ajax-link">Home</div>
+                        <div>  |  </div>
+                        <div class="ajax-link">About</div>
+                        <div>  |  </div>
+                        <div class="ajax-link">Work</div>
+                        <div>  |  </div>
+                        <div class="ajax-link">Careers</div>
+                        <div>  |  </div>
+                        <div class="ajax-link">Contact</div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>

@@ -15,13 +15,6 @@ namespace Week7CodeChallenge.Controllers
             return View();
         }
 
-        // GET: About
-        [HttpGet]
-        public ActionResult About()
-        {
-            return View();
-        }
-
         // GET: Work
         [HttpGet]
         public ActionResult Work()

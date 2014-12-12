@@ -109,6 +109,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\AboutController.cs" />
     <Compile Include="Controllers\ContactController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Global.asax.cs">
@@ -149,9 +150,13 @@
       <DependentUpon>ContactForm.edmx</DependentUpon>
     </Content>
     <Content Include="Views\_ViewStart.cshtml" />
-    <Content Include="Views\Home\About.cshtml" />
     <Content Include="Views\Home\Work.cshtml" />
     <Content Include="Views\Home\Careers.cshtml" />
+    <Content Include="Views\About\Who.cshtml" />
+    <Content Include="Views\About\What.cshtml" />
+    <Content Include="Views\About\Why.cshtml" />
+    <Content Include="Views\About\How.cshtml" />
+    <Content Include="Views\About\Where.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>

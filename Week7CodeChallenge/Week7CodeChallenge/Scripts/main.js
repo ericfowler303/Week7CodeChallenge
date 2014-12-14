@@ -3,7 +3,7 @@
     $("body").on("click", ".ajax-link", function() {
         // Get the url for the word that the user clicked on 
         var url = $(this).data("url");
-
+       
         // Do a get request for that url
         $.get(url, function(urlContent) {
             // get the main div an replace the html data there

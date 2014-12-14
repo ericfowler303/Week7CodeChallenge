@@ -12,32 +12,37 @@ namespace Week7CodeChallenge.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView();
+            }
             return View();
         }
+
         // GET: About/Who
         public ActionResult Who()
         {
-            return View();
+            return PartialView();
         }
         // GET: About/What
         public ActionResult What()
         {
-            return View();
+            return PartialView();
         }
         // GET: About/Why
         public ActionResult Why()
         {
-            return View();
+            return PartialView();
         }
         // GET: About/How
         public ActionResult How()
         {
-            return View();
+            return PartialView();
         }
         // GET: About/Where
         public ActionResult Where()
         {
-            return View();
+            return PartialView();
         }
     }
 }

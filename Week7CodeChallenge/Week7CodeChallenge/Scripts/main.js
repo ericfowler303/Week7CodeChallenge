@@ -1,6 +1,6 @@
 ﻿$(document).ready(function() {
     // create a selector to select the ajax-links for navigation between get/post actions
-    $("header, footer").on("click", ".ajax-links", function() {
+    $("body").on("click", ".ajax-link", function() {
         // Get the url for the word that the user clicked on 
         var url = $(this).data("url");
 

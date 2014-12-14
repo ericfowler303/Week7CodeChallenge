@@ -12,6 +12,10 @@ namespace Week7CodeChallenge.Controllers
         [HttpGet]
         public ActionResult Index()
         {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView();
+            }
             return View();
         }
 
@@ -19,6 +23,10 @@ namespace Week7CodeChallenge.Controllers
         [HttpGet]
         public ActionResult Work()
         {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView();
+            }
             return View();
         }
 
@@ -26,6 +34,10 @@ namespace Week7CodeChallenge.Controllers
         [HttpGet]
         public ActionResult Careers()
         {
+            if (Request.IsAjaxRequest())
+            {
+                return PartialView();
+            }
             return View();
         }
     }

@@ -18,5 +18,15 @@ namespace Week7CodeChallenge.Controllers
             }
             return View();
         }
+
+        [HttpPost]
+        public ActionResult Contact(Models.AJAXContactForm inputData)
+        {
+            // Dump the inputted data into the database
+            Models.ContactFormEntities db = new Models.ContactFormEntities();
+            db.AJAXContactForms.Add(inputData);
+            db.SaveChanges();
+            return Content("Thanks");
+        }
     }
 }
